@@ -3,15 +3,10 @@
     "extends": [
        "config:recommended"
     ],
-    "packageRules": [
-        {
-            "matchCategories": [
-                "docker"
-            ],
-            "fileMatch": [
-                "^maybe/docker-compose.yml"
-            ]
-        }
-    ]
-
+    "enabledManagers": ["docker-compose"],
+    "docker-compose": {
+        "fileMatch": [
+            "^maybe/docker-compose.yml"
+        ]
+    }
   }

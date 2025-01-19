@@ -1,0 +1,13 @@
+version: 3
+
+# Guide - https://www.augmentedmind.de/2023/07/30/renovate-bot-cheat-sheet/
+
+tasks:
+  renovate:validate: >
+    docker run -v ./.github/renovate.json:/usr/src/app/renovate.json -it renovate/renovate:39-full renovate-config-validator
+
+  commit:
+    - git add .
+    - |
+      git commit -m "fix(cicd): update renovate config"
+    - git push
