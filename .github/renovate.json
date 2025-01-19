@@ -1,6 +1,7 @@
 {
     "extends": ["config:base"],
-    "packageRules": [
+    "enabledManagers": ["docker"],
+    "docker": [
       {
         "description": "Update dependencies only in specific paths",
         "fileMatch": [
