@@ -1,6 +1,7 @@
 {
-    "extends": ["config:base"],
-    "fileMatch": [
-        "^maybe/.*"
-    ]
+    "docker": {
+        "fileMatch": [
+            "^maybe/.*"
+        ]
+    }
   }
