@@ -3,10 +3,8 @@
     "extends": [
        "config:recommended"
     ],
-    "enabledManagers": ["docker-compose"],
-    "docker-compose": {
-        "fileMatch": [
-            "^maybe/docker-compose.yml"
-        ]
-    }
+    "includePaths": [
+        "maybe"
+    ],
+    "enabledManagers": ["docker-compose"]
   }
