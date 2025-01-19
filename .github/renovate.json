@@ -1,7 +1,17 @@
 {
-    "docker": {
-        "fileMatch": [
-            "^maybe/.*"
-        ]
-    }
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+       "config:recommended"
+    ],
+    "packageRules": [
+        {
+            "matchCategories": [
+                "docker"
+            ],
+            "fileMatch": [
+                "^maybe/docker-compose.yml"
+            ]
+        }
+    ]
+
   }
