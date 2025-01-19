@@ -1,19 +1,6 @@
 {
     "extends": ["config:base"],
-    "enabledManagers": ["docker"],
-    "docker": [
-      {
-        "description": "Update dependencies only in specific paths",
-        "fileMatch": [
-            "^maybe/.*"
-        ],
-        "matchPackagePatterns": ["*"],
-        "enabled": true
-      },
-      {
-        "description": "Disable updates for all other paths",
-        "matchPackagePatterns": ["*"],
-        "enabled": false
-      }
+    "fileMatch": [
+        "^maybe/.*"
     ]
   }
