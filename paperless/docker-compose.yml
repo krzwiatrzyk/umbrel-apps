@@ -14,7 +14,7 @@ services:
       - ${APP_DATA_DIR}/data/redisdata:/data
 
   db:
-    image: docker.io/library/postgres:16@sha256:46aa2ee5d664b275f05d1a963b30fff60fb422b4b594d509765c42db46d48881
+    image: docker.io/library/postgres:16@sha256:c965017e1d29eb03e18a11abc25f5e3cd78cb5ac799d495922264b8489d5a3a1
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/data/pgdata:/var/lib/postgresql/data
