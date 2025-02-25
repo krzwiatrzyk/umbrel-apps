@@ -30,7 +30,7 @@ services:
         condition: service_healthy
 
   db:
-    image: postgres:16@sha256:1bf73ccae25238fa555100080042f0b2f9be08eb757e200fe6afc1fc413a1b3c
+    image: postgres:16@sha256:12c827ab26d9929e1fcf3439ed8f5af8616726d8a605d4dbb010abb797af1821
     restart: on-failure
     stop_grace_period: 1m
     volumes:
